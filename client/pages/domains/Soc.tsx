@@ -19,8 +19,12 @@ export default function Soc() {
       <Section container>
         <div className="grid gap-6 md:grid-cols-3 text-sm text-muted-foreground">
           <Card title="Boot">Bootloaders, secure boot, OTA.</Card>
-          <Card title="Drivers">Peripheral enablement, performance tuning.</Card>
-          <Card title="Validation">Board bring‑up, silicon validation, test suites.</Card>
+          <Card title="Drivers">
+            Peripheral enablement, performance tuning.
+          </Card>
+          <Card title="Validation">
+            Board bring‑up, silicon validation, test suites.
+          </Card>
         </div>
       </Section>
       <SiteFooter />
@@ -28,7 +32,13 @@ export default function Soc() {
   );
 }
 
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
+function Card({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="rounded-xl border p-6">
       <div className="font-semibold text-foreground">{title}</div>

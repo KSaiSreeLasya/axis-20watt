@@ -18,9 +18,15 @@ export default function Medical() {
       </Section>
       <Section container>
         <div className="grid gap-6 md:grid-cols-3 text-sm text-muted-foreground">
-          <Card title="Compliance">Documentation, quality systems, verification & validation.</Card>
-          <Card title="Sensors">Acquisition, calibration and signal processing.</Card>
-          <Card title="Connectivity">BLE/Wi‑Fi, HIPAA‑aware cloud ingestion and dashboards.</Card>
+          <Card title="Compliance">
+            Documentation, quality systems, verification & validation.
+          </Card>
+          <Card title="Sensors">
+            Acquisition, calibration and signal processing.
+          </Card>
+          <Card title="Connectivity">
+            BLE/Wi‑Fi, HIPAA‑aware cloud ingestion and dashboards.
+          </Card>
         </div>
       </Section>
       <SiteFooter />
@@ -28,7 +34,13 @@ export default function Medical() {
   );
 }
 
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
+function Card({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="rounded-xl border p-6">
       <div className="font-semibold text-foreground">{title}</div>

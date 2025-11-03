@@ -18,9 +18,15 @@ export default function Hardware() {
       </Section>
       <Section container>
         <div className="grid gap-6 md:grid-cols-3 text-sm text-muted-foreground">
-          <Card title="Design">Schematic capture, layout, DFM, BOM analysis.</Card>
-          <Card title="Prototyping">Assembly, board bring‑up and validation.</Card>
-          <Card title="Manufacturing">Vendor coordination, test jigs and QA.</Card>
+          <Card title="Design">
+            Schematic capture, layout, DFM, BOM analysis.
+          </Card>
+          <Card title="Prototyping">
+            Assembly, board bring‑up and validation.
+          </Card>
+          <Card title="Manufacturing">
+            Vendor coordination, test jigs and QA.
+          </Card>
         </div>
       </Section>
       <SiteFooter />
@@ -28,7 +34,13 @@ export default function Hardware() {
   );
 }
 
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
+function Card({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="rounded-xl border p-6">
       <div className="font-semibold text-foreground">{title}</div>

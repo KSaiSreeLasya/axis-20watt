@@ -30,24 +30,42 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
       <Section container>
-        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">Contact</h1>
+        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight">
+          Contact
+        </h1>
         <p className="mt-3 text-muted-foreground max-w-2xl">
-          Tell us about your project or resource needs. Our leadership team will respond promptly.
+          Tell us about your project or resource needs. Our leadership team will
+          respond promptly.
         </p>
         <form onSubmit={onSubmit} className="mt-8 grid gap-4 max-w-xl">
           <div>
             <label className="text-sm font-medium">Name</label>
-            <input className="mt-1 w-full rounded-md border bg-background px-3 py-2" value={name} onChange={(e) => setName(e.target.value)} />
+            <input
+              className="mt-1 w-full rounded-md border bg-background px-3 py-2"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div>
             <label className="text-sm font-medium">Email</label>
-            <input type="email" className="mt-1 w-full rounded-md border bg-background px-3 py-2" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input
+              type="email"
+              className="mt-1 w-full rounded-md border bg-background px-3 py-2"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div>
             <label className="text-sm font-medium">Message</label>
-            <textarea className="mt-1 min-h-32 w-full rounded-md border bg-background px-3 py-2" value={message} onChange={(e) => setMessage(e.target.value)} />
+            <textarea
+              className="mt-1 min-h-32 w-full rounded-md border bg-background px-3 py-2"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
           </div>
-          <Button type="submit" className="w-fit">Send message</Button>
+          <Button type="submit" className="w-fit">
+            Send message
+          </Button>
         </form>
         <div className="mt-10 grid gap-6 md:grid-cols-3 text-sm text-muted-foreground">
           <div>
@@ -57,11 +75,20 @@ export default function Contact() {
           </div>
           <div>
             <div className="font-medium text-foreground">Website</div>
-            <a className="underline" href="https://www.embinsys.com" target="_blank" rel="noreferrer">www.embinsys.com</a>
+            <a
+              className="underline"
+              href="https://www.embinsys.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              www.embinsys.com
+            </a>
           </div>
           <div>
             <div className="font-medium text-foreground">Email</div>
-            <a className="underline" href="mailto:info@embinsys.com">info@embinsys.com</a>
+            <a className="underline" href="mailto:info@embinsys.com">
+              info@embinsys.com
+            </a>
           </div>
         </div>
       </Section>

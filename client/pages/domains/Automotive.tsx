@@ -18,9 +18,15 @@ export default function Automotive() {
       </Section>
       <Section container>
         <div className="grid gap-6 md:grid-cols-3 text-sm text-muted-foreground">
-          <Card title="Stacks">CAN, UDS, J1939, Autosar integration and tooling.</Card>
-          <Card title="BSP & Drivers">Boot, diagnostics, connectivity, multimedia.</Card>
-          <Card title="QA">Hardware‑in‑the‑loop, automated testing and stability.</Card>
+          <Card title="Stacks">
+            CAN, UDS, J1939, Autosar integration and tooling.
+          </Card>
+          <Card title="BSP & Drivers">
+            Boot, diagnostics, connectivity, multimedia.
+          </Card>
+          <Card title="QA">
+            Hardware‑in‑the‑loop, automated testing and stability.
+          </Card>
         </div>
       </Section>
       <SiteFooter />
@@ -28,7 +34,13 @@ export default function Automotive() {
   );
 }
 
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
+function Card({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="rounded-xl border p-6">
       <div className="font-semibold text-foreground">{title}</div>

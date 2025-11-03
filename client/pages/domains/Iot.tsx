@@ -34,7 +34,13 @@ export default function Iot() {
   );
 }
 
-function Card({ title, children }: { title: string; children: React.ReactNode }) {
+function Card({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="rounded-xl border p-6">
       <div className="font-semibold text-foreground">{title}</div>

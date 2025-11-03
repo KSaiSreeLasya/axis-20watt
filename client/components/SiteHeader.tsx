@@ -20,8 +20,12 @@ export default function SiteHeader() {
             E
           </div>
           <div className="leading-tight">
-            <div className="text-lg font-extrabold tracking-tight">Embinsys</div>
-            <div className="text-xs text-muted-foreground -mt-1">Engineering & Design Services</div>
+            <div className="text-lg font-extrabold tracking-tight">
+              Embinsys
+            </div>
+            <div className="text-xs text-muted-foreground -mt-1">
+              Engineering & Design Services
+            </div>
           </div>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
@@ -50,7 +54,19 @@ export default function SiteHeader() {
             onClick={() => setOpen((v) => !v)}
           >
             <span className="i-heroicons-bars-3" />
-            <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg
+              className="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
           </button>
         </div>
       </div>
@@ -72,7 +88,12 @@ export default function SiteHeader() {
                 {n.label}
               </NavLink>
             ))}
-            <a className="py-2 text-sm font-medium" href="mailto:info@embinsys.com">Get in touch</a>
+            <a
+              className="py-2 text-sm font-medium"
+              href="mailto:info@embinsys.com"
+            >
+              Get in touch
+            </a>
           </div>
         </div>
       )}
