@@ -43,6 +43,12 @@ export default function Index() {
                   <a href="/capabilities">Explore Capabilities</a>
                 </Button>
               </div>
+              <div className="mt-6 flex flex-wrap gap-2">
+                <Pill icon={<Wifi className="h-4 w-4" />}>IoT</Pill>
+                <Pill icon={<Stethoscope className="h-4 w-4" />}>Medical</Pill>
+                <Pill icon={<Car className="h-4 w-4" />}>Automotive</Pill>
+                <Pill icon={<Cpu className="h-4 w-4" />}>SoC</Pill>
+              </div>
               <div className="mt-8 grid grid-cols-3 gap-4 text-center">
                 <Stat kpi="12+" label="Years" />
                 <Stat kpi="80+" label="Engineers" />
