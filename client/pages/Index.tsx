@@ -22,7 +22,7 @@ export default function Index() {
 
       {/* Hero */}
       <Section container>
-        <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-br from-sky-50 via-white to-amber-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900">
+        <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-br from-violet-50 via-white to-emerald-50 dark:from-violet-950/40 dark:via-slate-950 dark:to-emerald-950/30">
           <div className="grid gap-8 md:grid-cols-2 p-8 md:p-12 items-center">
             <div>
               <p className="text-sm font-semibold text-primary">
