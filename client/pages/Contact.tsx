@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import Section from "@/components/Section";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ContactFormRequest, ContactFormResponse } from "@shared/api";
+import { supabase } from "@/lib/supabase";
 
 export default function Contact() {
   const [name, setName] = useState("");
