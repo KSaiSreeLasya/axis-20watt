@@ -3,6 +3,7 @@ import SiteFooter from "@/components/SiteFooter";
 import Section from "@/components/Section";
 import DomainHero from "@/components/DomainHero";
 import { CircuitBoard } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Hardware() {
   return (
@@ -42,9 +43,16 @@ function Card({
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-xl border p-6">
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      whileHover={{ y: -2, boxShadow: "0 8px 24px rgba(0,0,0,0.08)" }}
+      transition={{ duration: 0.4 }}
+      className="rounded-xl border p-6"
+    >
       <div className="font-semibold text-foreground">{title}</div>
       <p className="mt-2">{children}</p>
-    </div>
+    </motion.div>
   );
 }
