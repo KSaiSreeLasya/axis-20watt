@@ -172,10 +172,16 @@ export default function Index() {
 
 function Stat({ kpi, label }: { kpi: string; label: string }) {
   return (
-    <div className="rounded-lg border bg-background/70 p-4">
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4 }}
+      className="rounded-lg border bg-background/70 p-4"
+    >
       <div className="text-2xl font-bold">{kpi}</div>
       <div className="text-xs text-muted-foreground">{label}</div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -189,13 +195,20 @@ function FeatureCard({
   subtitle: string;
 }) {
   return (
-    <div className="rounded-xl border bg-background/70 p-4">
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      whileHover={{ y: -2, boxShadow: "0 8px 24px rgba(0,0,0,0.08)" }}
+      transition={{ duration: 0.4 }}
+      className="rounded-xl border bg-background/70 p-4"
+    >
       <div className="flex items-center gap-2 font-semibold">
         {icon}
         {title}
       </div>
       <p className="mt-1 text-sm text-muted-foreground">{subtitle}</p>
-    </div>
+    </motion.div>
   );
 }
 
