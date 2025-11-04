@@ -1,6 +1,7 @@
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Section from "@/components/Section";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
@@ -78,7 +79,14 @@ export default function Projects() {
 
 function Proj({ title, points }: { title: string; points: string[] }) {
   return (
-    <div className="rounded-lg border p-5">
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      whileHover={{ y: -2, boxShadow: "0 8px 24px rgba(0,0,0,0.08)" }}
+      transition={{ duration: 0.4 }}
+      className="rounded-lg border p-5"
+    >
       <div className="font-semibold mb-2 text-foreground">{title}</div>
       <ul className="list-disc pl-5 space-y-1">
         {points.map((p) => (
@@ -87,6 +95,6 @@ function Proj({ title, points }: { title: string; points: string[] }) {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 }
