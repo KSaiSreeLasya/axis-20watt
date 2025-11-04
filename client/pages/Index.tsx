@@ -230,11 +230,13 @@ function LinkCard({
   to,
   title,
   desc,
+  image,
   icon,
 }: {
   to: string;
   title: string;
   desc: string;
+  image: string;
   icon: React.ReactNode;
 }) {
   return (
@@ -246,25 +248,33 @@ function LinkCard({
     >
       <Link
         to={to}
-        className="group rounded-xl border bg-card/40 p-5 md:p-6 transition-all hover:bg-card hover:shadow-lg hover:-translate-y-0.5 ring-1 ring-transparent hover:ring-primary/30"
+        className="group relative overflow-hidden rounded-xl border h-48"
       >
-        <div className="flex items-center gap-3 font-semibold">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-primary/10 text-primary">
-            {icon}
-          </span>
-          <span>{title}</span>
-        </div>
-        <p className="mt-3 text-sm text-foreground/70 leading-relaxed">
-          {desc}
-        </p>
-        <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
-          <span className="group-hover:underline">Learn more</span>
-          <span
-            aria-hidden
-            className="transition-transform group-hover:translate-x-0.5"
-          >
-            →
-          </span>
+        <img
+          src={image}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover opacity-70 transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/60 to-background/20" />
+        <div className="relative z-10 h-full p-5 md:p-6 flex flex-col justify-end">
+          <div className="flex items-center gap-3 font-semibold">
+            <span className="grid h-9 w-9 place-items-center rounded-md bg-primary/20 text-primary">
+              {icon}
+            </span>
+            <span>{title}</span>
+          </div>
+          <p className="mt-1 text-sm text-foreground/80 leading-relaxed">
+            {desc}
+          </p>
+          <div className="mt-3 inline-flex items-center gap-1 w-fit rounded-md bg-background/70 px-2 py-1 text-sm font-semibold text-primary">
+            <span className="group-hover:underline">Learn more</span>
+            <span
+              aria-hidden
+              className="transition-transform group-hover:translate-x-0.5"
+            >
+              →
+            </span>
+          </div>
         </div>
       </Link>
     </motion.div>
