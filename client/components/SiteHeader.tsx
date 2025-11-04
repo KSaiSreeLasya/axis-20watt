@@ -53,9 +53,7 @@ export default function SiteHeader() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          {location.pathname !== "/" && (
-            <BackButton className="sm:hidden" />
-          )}
+          {location.pathname !== "/" && <BackButton className="sm:hidden" />}
           <ThemeToggle />
           <Button asChild className="hidden md:inline-flex">
             <a href="mailto:info@embinsys.com">Get in touch</a>

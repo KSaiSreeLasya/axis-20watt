@@ -113,48 +113,48 @@ export default function Index() {
         </p>
         <div className="mt-6 rounded-xl border bg-card/30 p-4 md:p-6">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <DomainCard
-            to="/domains/iot"
-            title="IoT"
-            desc="Device firmware, gateways, cloud integration"
-            image="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg"
-            icon={<Wifi className="h-5 w-5" />}
-          />
-          <DomainCard
-            to="/domains/medical"
-            title="Medical"
-            desc="Regulated devices, sensors, connectivity"
-            image="https://images.pexels.com/photos/7108177/pexels-photo-7108177.jpeg"
-            icon={<Stethoscope className="h-5 w-5" />}
-          />
-          <DomainCard
-            to="/domains/automotive"
-            title="Automotive"
-            desc="BSP, telematics, CAN/UDS/J1939"
-            image="https://images.pexels.com/photos/18968756/pexels-photo-18968756.jpeg"
-            icon={<Car className="h-5 w-5" />}
-          />
-          <DomainCard
-            to="/domains/soc"
-            title="SoC"
-            desc="BSP, bootloaders, silicon validation"
-            image="https://images.pexels.com/photos/3665442/pexels-photo-3665442.jpeg"
-            icon={<Cpu className="h-5 w-5" />}
-          />
-          <DomainCard
-            to="/domains/hardware"
-            title="Hardware"
-            desc="Schematics, layout, bring‑up"
-            image="https://images.pexels.com/photos/6755088/pexels-photo-6755088.jpeg"
-            icon={<CircuitBoard className="h-5 w-5" />}
-          />
-          <DomainCard
-            to="/domains/testing"
-            title="Testing"
-            desc="Automation, stability, verification"
-            image="https://images.pexels.com/photos/3913031/pexels-photo-3913031.jpeg"
-            icon={<Wrench className="h-5 w-5" />}
-          />
+            <DomainCard
+              to="/domains/iot"
+              title="IoT"
+              desc="Device firmware, gateways, cloud integration"
+              image="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg"
+              icon={<Wifi className="h-5 w-5" />}
+            />
+            <DomainCard
+              to="/domains/medical"
+              title="Medical"
+              desc="Regulated devices, sensors, connectivity"
+              image="https://images.pexels.com/photos/7108177/pexels-photo-7108177.jpeg"
+              icon={<Stethoscope className="h-5 w-5" />}
+            />
+            <DomainCard
+              to="/domains/automotive"
+              title="Automotive"
+              desc="BSP, telematics, CAN/UDS/J1939"
+              image="https://images.pexels.com/photos/18968756/pexels-photo-18968756.jpeg"
+              icon={<Car className="h-5 w-5" />}
+            />
+            <DomainCard
+              to="/domains/soc"
+              title="SoC"
+              desc="BSP, bootloaders, silicon validation"
+              image="https://images.pexels.com/photos/3665442/pexels-photo-3665442.jpeg"
+              icon={<Cpu className="h-5 w-5" />}
+            />
+            <DomainCard
+              to="/domains/hardware"
+              title="Hardware"
+              desc="Schematics, layout, bring‑up"
+              image="https://images.pexels.com/photos/6755088/pexels-photo-6755088.jpeg"
+              icon={<CircuitBoard className="h-5 w-5" />}
+            />
+            <DomainCard
+              to="/domains/testing"
+              title="Testing"
+              desc="Automation, stability, verification"
+              image="https://images.pexels.com/photos/3913031/pexels-photo-3913031.jpeg"
+              icon={<Wrench className="h-5 w-5" />}
+            />
           </div>
         </div>
       </Section>
@@ -249,15 +249,22 @@ function LinkCard({
         className="group rounded-xl border bg-card/40 p-5 md:p-6 transition-all hover:bg-card hover:shadow-lg hover:-translate-y-0.5 ring-1 ring-transparent hover:ring-primary/30"
       >
         <div className="flex items-center gap-3 font-semibold">
-        <span className="grid h-9 w-9 place-items-center rounded-md bg-primary/10 text-primary">
-          {icon}
-        </span>
-        <span>{title}</span>
-      </div>
-      <p className="mt-3 text-sm text-foreground/70 leading-relaxed">{desc}</p>
+          <span className="grid h-9 w-9 place-items-center rounded-md bg-primary/10 text-primary">
+            {icon}
+          </span>
+          <span>{title}</span>
+        </div>
+        <p className="mt-3 text-sm text-foreground/70 leading-relaxed">
+          {desc}
+        </p>
         <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
           <span className="group-hover:underline">Learn more</span>
-          <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
+          <span
+            aria-hidden
+            className="transition-transform group-hover:translate-x-0.5"
+          >
+            →
+          </span>
         </div>
       </Link>
     </motion.div>
@@ -301,10 +308,17 @@ function DomainCard({
             </span>
             <span>{title}</span>
           </div>
-          <p className="mt-1 text-sm text-foreground/80 leading-relaxed">{desc}</p>
+          <p className="mt-1 text-sm text-foreground/80 leading-relaxed">
+            {desc}
+          </p>
           <div className="mt-3 inline-flex items-center gap-1 w-fit rounded-md bg-background/70 px-2 py-1 text-sm font-semibold text-primary">
             <span className="group-hover:underline">Learn more</span>
-            <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
+            <span
+              aria-hidden
+              className="transition-transform group-hover:translate-x-0.5"
+            >
+              →
+            </span>
           </div>
         </div>
       </Link>

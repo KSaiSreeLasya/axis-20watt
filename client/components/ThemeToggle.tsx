@@ -17,13 +17,12 @@ export default function ThemeToggle() {
       aria-label="Toggle theme"
       title={isDark ? "Switch to light" : "Switch to dark"}
     >
-      {isDark ? (
-        <Moon className="h-4 w-4" />
-      ) : (
-        <Sun className="h-4 w-4" />
-      )}
+      {isDark ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
       <span className="hidden sm:inline">{isDark ? "Dark" : "Light"}</span>
-      <Switch checked={isDark} onCheckedChange={(v) => setTheme(v ? "dark" : "light")} />
+      <Switch
+        checked={isDark}
+        onCheckedChange={(v) => setTheme(v ? "dark" : "light")}
+      />
     </button>
   );
 }
