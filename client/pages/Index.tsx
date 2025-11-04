@@ -28,10 +28,10 @@ export default function Index() {
               <p className="text-sm font-semibold text-primary">
                 Engineering & Design Services
               </p>
-              <h1 className="mt-2 text-3xl md:text-5xl font-extrabold tracking-tight">
+              <h1 className="mt-2 text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent">
                 Innovation. Quality. Reliability.
               </h1>
-              <p className="mt-4 text-lg text-foreground/80 max-w-xl leading-relaxed">
+              <p className="mt-4 text-base md:text-lg text-foreground/80 max-w-xl leading-relaxed">
                 Embedded systems, IoT, medical and automotive solutions
                 delivered by a senior team with 25+ years of experience.
               </p>
