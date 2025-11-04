@@ -232,7 +232,7 @@ function LinkCard({
     >
       <Link
         to={to}
-        className="group rounded-xl border p-6 transition-all hover:bg-accent/40 hover:shadow-md hover:-translate-y-0.5"
+        className="group rounded-xl border bg-card/50 p-6 transition-all hover:bg-card hover:shadow-md hover:-translate-y-0.5"
       >
         <div className="flex items-center gap-3 font-semibold">
         <span className="grid h-9 w-9 place-items-center rounded-md bg-primary/10 text-primary">
