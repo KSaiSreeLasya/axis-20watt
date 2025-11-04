@@ -88,18 +88,21 @@ export default function Index() {
             to="/capabilities"
             title="Capabilities"
             desc="End‑to‑end product engineering across hardware, software, and test."
+            image="https://images.pexels.com/photos/3938016/pexels-photo-3938016.jpeg"
             icon={<Layers className="h-5 w-5" />}
           />
           <LinkCard
             to="/projects"
             title="Projects"
             desc="Selected work across medical, industrial, consumer and automotive."
+            image="https://images.pexels.com/photos/7974/pexels-photo-7974.jpeg"
             icon={<Award className="h-5 w-5" />}
           />
           <LinkCard
             to="/contact"
             title="Contact"
             desc="Talk to our team about your product or resource needs."
+            image="https://images.pexels.com/photos/8728429/pexels-photo-8728429.jpeg"
             icon={<Wrench className="h-5 w-5" />}
           />
         </div>
