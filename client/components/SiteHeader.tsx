@@ -23,15 +23,14 @@ export default function SiteHeader() {
             <BackButton className="hidden sm:inline-flex" />
           )}
           <Link to="/" className="flex items-center gap-3">
-            <div className="grid place-items-center h-9 w-9 rounded-md bg-primary text-primary-foreground font-bold">
-              E
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F8bf52f20c3654880b140d224131cfa2e%2Fd72511e7e901420a856bc00f97844f91?format=webp&width=800"
+              alt="Axiswatt Logo"
+              className="h-9 w-9 object-contain"
+            />
             <div className="leading-tight">
               <div className="text-lg font-extrabold tracking-tight">
-                Embinsys
-              </div>
-              <div className="text-xs text-muted-foreground -mt-1">
-                Engineering & Design Services
+                Axiswatt
               </div>
             </div>
           </Link>
@@ -56,7 +55,7 @@ export default function SiteHeader() {
           {location.pathname !== "/" && <BackButton className="sm:hidden" />}
           <ThemeToggle />
           <Button asChild className="hidden md:inline-flex">
-            <a href="mailto:info@embinsys.com">Get in touch</a>
+            <a href="mailto:info@axiswatt.com">Get in touch</a>
           </Button>
           <button
             className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border"
@@ -99,7 +98,7 @@ export default function SiteHeader() {
             ))}
             <a
               className="py-2 text-sm font-medium"
-              href="mailto:info@embinsys.com"
+              href="mailto:info@axiswatt.com"
             >
               Get in touch
             </a>
