@@ -68,7 +68,7 @@ export default function Index() {
                 width="900"
                 height="600"
                 loading="eager"
-                fetchpriority="high"
+                fetchPriority="high"
                 decoding="async"
                 className="rounded-xl border shadow-sm object-cover w-full h-[320px] md:h-[420px]"
               />
