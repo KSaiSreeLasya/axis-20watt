@@ -55,7 +55,7 @@ export default function SiteHeader() {
           {location.pathname !== "/" && <BackButton className="sm:hidden" />}
           <ThemeToggle />
           <Button asChild className="hidden md:inline-flex">
-            <a href="mailto:info@axiswatt.com">Get in touch</a>
+            <a href="mailto:info@azorixembeeded.com">Get in touch</a>
           </Button>
           <button
             className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border"
@@ -98,7 +98,7 @@ export default function SiteHeader() {
             ))}
             <a
               className="py-2 text-sm font-medium"
-              href="mailto:info@axiswatt.com"
+              href="mailto:info@azorixembeeded.com"
             >
               Get in touch
             </a>

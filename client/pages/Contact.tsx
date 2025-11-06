@@ -119,17 +119,17 @@ export default function Contact() {
             <div className="font-medium text-foreground">Website</div>
             <a
               className="underline"
-              href="https://www.embinsys.com"
+              href="https://www.azorixembeeded.com"
               target="_blank"
               rel="noreferrer"
             >
-              www.embinsys.com
+              www.azorixembeeded.com
             </a>
           </div>
           <div>
             <div className="font-medium text-foreground">Email</div>
-            <a className="underline" href="mailto:info@embinsys.com">
-              info@embinsys.com
+            <a className="underline" href="mailto:info@azorixembeeded.com">
+              info@azorixembeeded.com
             </a>
           </div>
         </motion.div>

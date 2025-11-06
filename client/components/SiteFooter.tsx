@@ -26,8 +26,8 @@ export default function SiteFooter() {
         <div>
           <div className="font-semibold mb-3">Contact</div>
           <ul className="space-y-1 text-sm text-muted-foreground">
-            <li>www.axiswatt.com</li>
-            <li>info@axiswatt.com</li>
+            <li>www.azorixembeeded.com</li>
+            <li>info@azorixembeeded.com</li>
           </ul>
         </div>
       </div>

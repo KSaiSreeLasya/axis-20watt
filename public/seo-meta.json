@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Leading Software & AI Development Company in Hyderabad | Azorix Technologies",
+    "description": "Azorix Technologies delivers cutting-edge digital solutions in AI, software development, IoT, and cloud computing. Empower your business with intelligent innovation and expert engineering.",
+    "path": "/"
+  },
+  {
+    "title": "Software Development, AI & IoT Solutions | Azorix Technologies Hyderabad",
+    "description": "Discover innovative software, AI, and IoT services by Azorix Technologies. From web apps to enterprise automation — we build scalable, secure, and smart digital systems.",
+    "path": "/capabilities"
+  },
+  {
+    "title": "Custom Web & Mobile App Development | Azorix Technologies",
+    "description": "End-to-end web and mobile app development with modern stacks, robust architecture, and secure deployments for startups and enterprises.",
+    "path": "/services/web-mobile"
+  },
+  {
+    "title": "Artificial Intelligence & Machine Learning Services | Azorix Technologies",
+    "description": "ML model development, MLOps, computer vision, NLP, and predictive analytics to unlock data-driven growth.",
+    "path": "/services/ai-ml"
+  },
+  {
+    "title": "IoT Firmware, Gateways & Cloud Integrations | Azorix Technologies",
+    "description": "Device firmware, secure connectivity, and cloud pipelines on AWS/Azure for reliable IoT products.",
+    "path": "/domains/iot"
+  },
+  {
+    "title": "Embedded Systems & RTOS Development | Azorix Technologies",
+    "description": "BSPs, drivers, bootloaders, and RTOS/Linux development for mission-critical embedded platforms.",
+    "path": "/services/embedded"
+  },
+  {
+    "title": "Cloud Architecture & DevOps Automation | Azorix Technologies",
+    "description": "Scalable cloud-native architectures, CI/CD pipelines, observability, and cost optimization.",
+    "path": "/services/cloud-devops"
+  },
+  {
+    "title": "Data Engineering & Analytics Solutions | Azorix Technologies",
+    "description": "Data lakes, ETL/ELT pipelines, warehousing, and BI dashboards to power decisions at scale.",
+    "path": "/services/data"
+  },
+  {
+    "title": "Cybersecurity & Compliance Services | Azorix Technologies",
+    "description": "Security audits, hardening, SAST/DAST, and compliance readiness for regulated industries.",
+    "path": "/services/security"
+  },
+  {
+    "title": "UI/UX Design & Product Strategy | Azorix Technologies",
+    "description": "Human-centered design, rapid prototyping, and design systems that accelerate product teams.",
+    "path": "/services/design"
+  },
+  {
+    "title": "Digital Transformation for Enterprises | Azorix Technologies",
+    "description": "Modernize legacy systems, integrate platforms, and automate workflows to boost efficiency.",
+    "path": "/solutions/digital-transformation"
+  },
+  {
+    "title": "Healthcare & Medical Software Solutions | Azorix Technologies",
+    "description": "HIPAA-aware medical device software, connectivity, and data platforms for healthcare innovators.",
+    "path": "/domains/medical"
+  },
+  {
+    "title": "Automotive Telematics & Diagnostics Software | Azorix Technologies",
+    "description": "In-vehicle software, telematics, AUTOSAR integrations, and diagnostics with strong QA.",
+    "path": "/domains/automotive"
+  },
+  {
+    "title": "Silicon & SoC Enablement Services | Azorix Technologies",
+    "description": "Bootloaders, BSPs, driver enablement, and silicon validation for x86/ARM/custom SoCs.",
+    "path": "/domains/soc"
+  },
+  {
+    "title": "Contact Azorix Technologies | Hyderabad | Software, AI & IoT Experts",
+    "description": "Talk to our engineers about your next project. Fast responses and flexible engagement models.",
+    "path": "/contact"
+  }
+]
