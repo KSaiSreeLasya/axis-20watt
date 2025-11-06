@@ -28,13 +28,13 @@ export default function Index() {
 
       {/* Hero */}
       <Section container>
-        <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-br from-violet-50 via-white to-emerald-50 dark:from-violet-950/40 dark:via-slate-950 dark:to-emerald-950/30">
+        <div className="relative overflow-hidden rounded-2xl border bg-gradient-to-br from-teal-50 via-white to-emerald-50 dark:from-teal-950/30 dark:via-slate-950 dark:to-emerald-950/20">
           <div className="grid gap-8 md:grid-cols-2 p-8 md:p-12 items-center">
             <div>
               <p className="text-sm font-semibold text-primary">
                 Engineering & Design Services
               </p>
-              <h1 className="mt-2 text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent">
+              <h1 className="mt-2 text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(16,185,129,0.15)]">
                 Innovation. Quality. Reliability.
               </h1>
               <p className="mt-4 text-base md:text-lg text-foreground/80 max-w-xl leading-relaxed">
@@ -89,7 +89,7 @@ export default function Index() {
 
       {/* Quick links */}
       <Section>
-        <div className="rounded-xl border bg-card/30 p-4 md:p-6">
+        <div className="rounded-xl border bg-card/50 backdrop-blur p-4 md:p-6">
           <div className="grid gap-6 md:grid-cols-3">
             <LinkCard
               to="/capabilities"
@@ -122,7 +122,7 @@ export default function Index() {
         <p className="mt-2 text-foreground/80 max-w-2xl leading-relaxed">
           Where we deliver the most impact across industries and technologies.
         </p>
-        <div className="mt-6 rounded-xl border bg-card/30 p-4 md:p-6">
+        <div className="mt-6 rounded-xl border bg-card/60 backdrop-blur p-4 md:p-6">
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <DomainCard
               to="/domains/iot"
@@ -202,7 +202,7 @@ function Stat({ kpi, label }: { kpi: string; label: string }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4 }}
-      className="rounded-lg border bg-background/70 p-4"
+      className="rounded-lg border bg-background/70 p-4 shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="text-2xl font-bold">{kpi}</div>
       <div className="text-xs text-muted-foreground">{label}</div>
@@ -226,7 +226,7 @@ function FeatureCard({
       viewport={{ once: true }}
       whileHover={{ y: -2, boxShadow: "0 8px 24px rgba(0,0,0,0.08)" }}
       transition={{ duration: 0.4 }}
-      className="rounded-xl border bg-background/70 p-4"
+      className="rounded-xl border bg-background/70 p-4 shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="flex items-center gap-2 font-semibold">
         {icon}
@@ -259,7 +259,7 @@ function LinkCard({
     >
       <Link
         to={to}
-        className="group relative overflow-hidden rounded-xl border h-48"
+        className="group relative overflow-hidden rounded-xl border h-48 hover:shadow-lg transition-shadow"
       >
         <img
           src={image}
@@ -314,7 +314,7 @@ function DomainCard({
     >
       <Link
         to={to}
-        className="group relative overflow-hidden rounded-xl border h-48"
+        className="group relative overflow-hidden rounded-xl border h-48 hover:shadow-lg transition-shadow"
       >
         <img
           src={image}
@@ -355,7 +355,7 @@ function Pill({
   icon?: React.ReactNode;
 }) {
   return (
-    <span className="inline-flex items-center gap-1 rounded-full border bg-background px-3 py-1 text-sm">
+    <span className="inline-flex items-center gap-1 rounded-full border bg-background/80 backdrop-blur px-3 py-1 text-sm">
       {icon}
       {children}
     </span>
