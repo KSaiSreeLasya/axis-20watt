@@ -10,13 +10,13 @@ export default function SiteFooter() {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2Ffc1a3beb099e46de8f378d4b0799fbed?format=webp&width=800"
                 alt="Azorix Embeeded Logo"
-                className="h-16 w-16 object-contain dark:hidden"
+                className="h-10 w-10 object-contain dark:hidden"
               />
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F89ffe0a68af8496fab2fb1696fd78272?format=webp&width=800"
                 alt="Azorix Embeeded Logo White"
                 aria-hidden
-                className="h-16 w-16 object-contain hidden dark:inline-block"
+                className="h-10 w-10 object-contain hidden dark:inline-block"
               />
             </span>
             <div className="text-xl font-bold">Azorix Embeeded</div>
