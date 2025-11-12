@@ -14,7 +14,7 @@ export default function SEO({
   canonicalUrl,
 }: SEOProps) {
   useEffect(() => {
-    const SITE_TITLE = "Azorix Embeeded";
+    const SITE_TITLE = "Azorix Embedded";
     document.title = SITE_TITLE;
 
     const ensureMeta = (key: "name" | "property", id: string) => {
@@ -56,7 +56,7 @@ export default function SEO({
     link.setAttribute("href", canonical);
 
     const ogTitle = ensureMeta("property", "og:title");
-    ogTitle.setAttribute("content", "Azorix Embeeded");
+    ogTitle.setAttribute("content", "Azorix Embedded");
 
     if (description) {
       const ogDesc = ensureMeta("property", "og:description");

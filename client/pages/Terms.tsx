@@ -8,8 +8,8 @@ export default function Terms() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
       <SEO
-        title="Terms of Service | Azorix Embeeded"
-        description="Terms of service for Azorix Embeeded."
+        title="Terms of Service | Azorix Embedded"
+        description="Terms of service for Azorix Embedded."
         canonicalPath="/terms"
       />
 
@@ -18,7 +18,7 @@ export default function Terms() {
           Terms of Service
         </h1>
         <p className="mt-4 text-muted-foreground max-w-3xl">
-          These Terms of Service govern your use of the Azorix Embeeded website
+          These Terms of Service govern your use of the Azorix Embedded website
           and related services. By accessing or using our site you agree to be
           bound by these terms.
         </p>
@@ -36,7 +36,7 @@ export default function Terms() {
           <section>
             <h2 className="font-semibold">Intellectual Property</h2>
             <p className="mt-2">
-              All content on this site is the property of Azorix Embeeded or its
+              All content on this site is the property of Azorix Embedded or its
               licensors. You may not reproduce or distribute content without
               permission.
             </p>
@@ -53,7 +53,7 @@ export default function Terms() {
           <section>
             <h2 className="font-semibold">Limitation of Liability</h2>
             <p className="mt-2">
-              To the maximum extent permitted by law, Azorix Embeeded will not
+              To the maximum extent permitted by law, Azorix Embedded will not
               be liable for indirect, incidental, or consequential damages.
             </p>
           </section>
@@ -62,7 +62,7 @@ export default function Terms() {
             <h2 className="font-semibold">Contact</h2>
             <p className="mt-2">
               Questions about these terms can be directed to
-              info@azorixembeeded.com.
+              info@azorixembedded.com.
             </p>
           </section>
         </div>

@@ -25,21 +25,19 @@ export default function SiteHeader() {
           <Link to="/" className="flex items-center gap-3">
             <span className="relative inline-flex">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2Ffc1a3beb099e46de8f378d4b0799fbed?format=webp&width=800"
-                alt="Azorix Embeeded Logo"
-                className="h-10 w-10 object-contain dark:hidden"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F1ea1a5551abe4a9abfb9506ae0f1ecaf?format=webp&width=800"
+                alt="Azorix Embedded Logo"
+                className="h-16 w-auto object-contain dark:hidden"
               />
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F89ffe0a68af8496fab2fb1696fd78272?format=webp&width=800"
-                alt="Azorix Embeeded Logo White"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F1d554e806558473ab1f04a695d01d64c?format=webp&width=800"
+                alt="Azorix Embedded Logo White"
                 aria-hidden
-                className="h-10 w-10 object-contain hidden dark:inline-block"
+                className="h-16 w-auto object-contain hidden dark:inline-block"
               />
             </span>
             <div className="leading-tight">
-              <div className="text-lg font-extrabold tracking-tight">
-                Azorix Embeeded
-              </div>
+              <div className="text-lg font-extrabold tracking-tight"></div>
             </div>
           </Link>
         </div>
@@ -66,7 +64,7 @@ export default function SiteHeader() {
           {location.pathname !== "/" && <BackButton className="sm:hidden" />}
           <ThemeToggle />
           <Button asChild className="hidden md:inline-flex">
-            <a href="mailto:info@azorixembeeded.com">Get in touch</a>
+            <a href="mailto:info@azorixembedded.com">Get in touch</a>
           </Button>
           <button
             className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border hover:bg-primary/10"
@@ -109,7 +107,7 @@ export default function SiteHeader() {
             ))}
             <a
               className="py-2 text-sm font-medium"
-              href="mailto:info@azorixembeeded.com"
+              href="mailto:info@azorixembedded.com"
             >
               Get in touch
             </a>

@@ -8,18 +8,18 @@ export default function SiteFooter() {
           <div className="flex items-center gap-3 mb-4">
             <span className="relative inline-flex">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2Ffc1a3beb099e46de8f378d4b0799fbed?format=webp&width=800"
-                alt="Azorix Embeeded Logo"
-                className="h-10 w-10 object-contain dark:hidden"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F1ea1a5551abe4a9abfb9506ae0f1ecaf?format=webp&width=800"
+                alt="Azorix Embedded Logo"
+                className="h-16 w-auto object-contain dark:hidden"
               />
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F89ffe0a68af8496fab2fb1696fd78272?format=webp&width=800"
-                alt="Azorix Embeeded Logo White"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fdf131029371243a6bdd4cd7752a9db95%2F1d554e806558473ab1f04a695d01d64c?format=webp&width=800"
+                alt="Azorix Embedded Logo White"
                 aria-hidden
-                className="h-10 w-10 object-contain hidden dark:inline-block"
+                className="h-16 w-auto object-contain hidden dark:inline-block"
               />
             </span>
-            <div className="text-xl font-bold">Azorix Embeeded</div>
+            <div className="text-xl font-bold"></div>
           </div>
           <p className="text-sm text-muted-foreground mt-2 max-w-sm">
             Innovation. Quality. Reliability. Partnering with clients to deliver
@@ -36,8 +36,8 @@ export default function SiteFooter() {
         <div>
           <div className="font-semibold mb-3">Contact</div>
           <ul className="space-y-1 text-sm text-muted-foreground">
-            <li>www.azorixembeeded.com</li>
-            <li>info@azorixembeeded.com</li>
+            <li>www.azorixembedded.com</li>
+            <li>info@azorixembedded.com</li>
           </ul>
         </div>
         <div>
@@ -57,7 +57,7 @@ export default function SiteFooter() {
         </div>
       </div>
       <div className="border-t py-4 text-center text-xs text-muted-foreground bg-gradient-to-r from-transparent via-primary/10 to-transparent">
-        © 2024 Azorix Embeeded. All rights reserved.
+        © 2024 Azorix Embedded. All rights reserved.
       </div>
     </footer>
   );

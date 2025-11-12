@@ -211,20 +211,20 @@ export default function Contact() {
               <div className="font-medium text-foreground">Website</div>
               <a
                 className="inline-flex items-center gap-2 underline"
-                href="https://www.azorixembeeded.com"
+                href="https://www.azorixembedded.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Globe className="h-4 w-4" /> www.azorixembeeded.com
+                <Globe className="h-4 w-4" /> www.azorixembedded.com
               </a>
             </div>
             <div>
               <div className="font-medium text-foreground">Email</div>
               <a
                 className="inline-flex items-center gap-2 underline"
-                href="mailto:info@azorixembeeded.com"
+                href="mailto:info@azorixembedded.com"
               >
-                <Mail className="h-4 w-4" /> info@azorixembeeded.com
+                <Mail className="h-4 w-4" /> info@azorixembedded.com
               </a>
             </div>
           </div>

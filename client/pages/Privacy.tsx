@@ -8,8 +8,8 @@ export default function Privacy() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
       <SEO
-        title="Privacy Policy | Azorix Embeeded"
-        description="Privacy practices for Azorix Embeeded."
+        title="Privacy Policy | Azorix Embedded"
+        description="Privacy practices for Azorix Embedded."
         canonicalPath="/privacy"
       />
 
@@ -18,7 +18,7 @@ export default function Privacy() {
           Privacy Policy
         </h1>
         <p className="mt-4 text-muted-foreground max-w-3xl">
-          Azorix Embeeded is committed to protecting your privacy. This policy
+          Azorix Embedded is committed to protecting your privacy. This policy
           explains how we collect, use, disclose and safeguard your information
           when you visit our website.
         </p>
@@ -70,7 +70,7 @@ export default function Privacy() {
           <section>
             <h2 className="font-semibold">Contact</h2>
             <p className="mt-2">
-              For privacy concerns, email us at info@azorixembeeded.com.
+              For privacy concerns, email us at info@azorixembedded.com.
             </p>
           </section>
         </div>
