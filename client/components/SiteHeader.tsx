@@ -38,7 +38,7 @@ export default function SiteHeader() {
             </span>
             <div className="leading-tight">
               <div className="text-lg font-extrabold tracking-tight">
-                Azorix Embedded
+                
               </div>
             </div>
           </Link>
