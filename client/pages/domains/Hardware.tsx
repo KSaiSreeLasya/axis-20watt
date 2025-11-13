@@ -2,7 +2,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Section from "@/components/Section";
 import DomainHero from "@/components/DomainHero";
-import { CircuitBoard, Zap, Cpu, Tools } from "lucide-react";
+import { CircuitBoard, Zap, Cpu, Wrench } from "lucide-react";
 import { motion } from "framer-motion";
 import SEO from "@/components/SEO";
 import { CheckCircle2 } from "lucide-react";
@@ -40,7 +40,7 @@ export default function Hardware() {
             desc="Multi-layer design, signal integrity, power distribution"
           />
           <CapabilityCard
-            icon={<Tools className="h-6 w-6" />}
+            icon={<Wrench className="h-6 w-6" />}
             title="Bring-Up Support"
             desc="Board validation, firmware integration, debugging"
           />
