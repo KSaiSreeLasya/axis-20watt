@@ -351,37 +351,44 @@ export default function Index() {
 
       {/* IoT Applications */}
       <Section className="bg-secondary/40">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">
-          IoT Applications
-        </h2>
-        <p className="text-foreground/80 max-w-3xl leading-relaxed mb-8">
-          Delivering intelligent solutions across diverse industry verticals.
-        </p>
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">
+            IoT Applications
+          </h2>
+          <p className="text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            Smart devices that make everyday tasks smarter, faster, and more efficient
+          </p>
+        </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
           <IoTAppCard
-            title="Industrial IoT"
-            desc="Smart manufacturing with embedded systems for greater industrial control and optimization"
+            title="🏭 Industrial IoT"
+            desc="Factories that monitor themselves - machines that predict problems before they happen"
             icon={<Zap className="h-6 w-6" />}
+            examples={["Predictive maintenance", "Production optimization", "Equipment monitoring"]}
           />
           <IoTAppCard
-            title="Medical IoT"
-            desc="Medical devices with sensors for monitoring, diagnosing, and treating patient health"
+            title="🏥 Medical IoT"
+            desc="Devices that care for your health - from monitoring your heart to tracking fitness"
             icon={<Stethoscope className="h-6 w-6" />}
+            examples={["Health monitoring", "Patient alerts", "Remote diagnosis"]}
           />
           <IoTAppCard
-            title="Smart City"
-            desc="ICT-enabled cities with improved quality of life, efficiency, and digital connectivity"
+            title="🏙️ Smart City"
+            desc="Cities that work efficiently - traffic flows better, utilities use less energy"
             icon={<Globe className="h-6 w-6" />}
+            examples={["Traffic management", "Energy saving", "Public safety"]}
           />
           <IoTAppCard
-            title="Automotive IoT"
-            desc="Connected vehicles with enhanced efficiency, safety, comfort, and intelligent features"
+            title="🚗 Automotive IoT"
+            desc="Cars that are smarter and safer - connected and aware of their surroundings"
             icon={<Car className="h-6 w-6" />}
+            examples={["Navigation", "Safety features", "Remote control"]}
           />
           <IoTAppCard
-            title="Consumer IoT"
-            desc="Connected consumer devices making daily tasks efficient in workplace and home"
+            title="📱 Consumer IoT"
+            desc="Home devices that listen and respond - making life simpler and more connected"
             icon={<Smartphone className="h-6 w-6" />}
+            examples={["Smart home", "Wearables", "Personal devices"]}
           />
         </div>
       </Section>
