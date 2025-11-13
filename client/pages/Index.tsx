@@ -182,35 +182,46 @@ export default function Index() {
 
       {/* Centers of Excellence */}
       <Section className="bg-secondary/40">
-        <div>
+        <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold">
-            Centers of Excellence
+            Specialized Teams for Every Market
           </h2>
-          <p className="mt-2 text-foreground/80 max-w-3xl leading-relaxed">
-            Specialized teams with deep expertise in key technology domains,
-            delivering industry-leading solutions.
+          <p className="mt-2 text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            Expert centers focused on specific industries - each with deep knowledge and proven track records
           </p>
         </div>
-        <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <CoECard
+            emoji="📱"
             icon={<Smartphone className="h-6 w-6" />}
             title="Handheld & IoT"
-            desc="Android, OS internals, BSP, drivers, RF, connectivity, QA"
+            highlight="Smart Devices"
+            desc="Building smart devices - phones, watches, home devices"
+            topics={["Android", "Connectivity", "Low-power design", "User apps"]}
           />
           <CoECard
+            emoji="🏥"
             icon={<Stethoscope className="h-6 w-6" />}
             title="Medical Devices"
-            desc="Regulated devices, R&D, clinical/regulatory, end-to-end firmware"
+            highlight="Healthcare"
+            desc="Medical-grade devices that save lives"
+            topics={["Regulatory compliance", "Patient safety", "Sensor integration", "Data security"]}
           />
           <CoECard
+            emoji="🚗"
             icon={<Car className="h-6 w-6" />}
             title="Automotive"
-            desc="CAN/UDS/J1939, Autosar, MISRA, telematics, DevOps"
+            highlight="Connected Vehicles"
+            desc="Making cars smarter and safer"
+            topics={["Vehicle networks", "Safety systems", "Telematics", "Real-time control"]}
           />
           <CoECard
+            emoji="⚙️"
             icon={<Cpu className="h-6 w-6" />}
-            title="SoC"
-            desc="BSP, drivers, connectivity, audio, silicon verification"
+            title="Silicon & SoC"
+            highlight="Chip Design"
+            desc="Enabling next-generation processors"
+            topics={["Bootloaders", "Drivers", "Performance", "Validation"]}
           />
         </div>
       </Section>
